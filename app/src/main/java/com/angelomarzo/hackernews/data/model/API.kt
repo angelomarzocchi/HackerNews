@@ -1,6 +1,6 @@
 package com.angelomarzo.hackernews.data.model
 
-enum class ItemType(val value: String) {
+enum class HackerNewsItemType(val value: String) {
     JOB("job"),
     STORY("story"),
     COMMENT("comment"),
@@ -8,22 +8,20 @@ enum class ItemType(val value: String) {
     POLLOPT("pollopt");
 }
 
-data class Item(
-    val id: Long,
+data class HackerNewsItem(
+    val id: Int,
     val deleted: Boolean?,
-    val type: ItemType,
+    val type: HackerNewsItemType?,
     val by: String?,
     val time: Long?,
     val text: String?,
     val dead: Boolean?,
     val parent: Long?,
     val poll: Long?,
-    val kids: List<Long>?,
+    val kids: List<Int>?,
     val url: String?,
     val score: Int?,
     val title: String?,
-    val parts: List<Long>?,
+    val parts: List<Int>?,
     val descendants: Int?,
-
-
 )
