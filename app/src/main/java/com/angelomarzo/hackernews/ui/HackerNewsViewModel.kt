@@ -7,6 +7,7 @@ import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
+import com.angelomarzo.hackernews.HackerNewsApplication
 import com.angelomarzo.hackernews.data.HackerNewsRepository
 import com.angelomarzo.hackernews.data.model.Story
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -44,8 +45,8 @@ class HackerNewsViewModel(
     companion object {
         val Factory: ViewModelProvider.Factory = viewModelFactory {
             initializer {
-                val application = (this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as HackerNewsA)
-                GoalViewModel(application.container.goalRepository)
+                val application = (this[ViewModelProvider.AndroidViewModelFactory.APPLICATION_KEY] as HackerNewsApplication)
+                HackerNewsViewModel(application.container.hackerNewsRepository)
             }
         }
     }

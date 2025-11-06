@@ -10,6 +10,7 @@ import com.angelomarzo.hackernews.data.model.Story
 import com.angelomarzo.hackernews.data.model.toStory
 import com.angelomarzo.hackernews.network.HackerNewsApiService
 import kotlinx.coroutines.flow.Flow
+import retrofit2.http.GET
 import java.io.IOException
 
 interface HackerNewsRepository {
@@ -27,14 +28,17 @@ class NetworkHackerNewsRepository(
         private const val PAGE_SIZE = 20
     }
 
+    @GET(value = "topstories.json")
     override fun getTopStories(): Flow<PagingData<Story>>{
         return getPagedStories { hackerNewsApi.getTopStories() }
     }
 
+    @GET(value = "newstories.json")
     override fun getNewStories(): Flow<PagingData<Story>> {
         return getPagedStories { hackerNewsApi.getNewStories() }
     }
 
+    @GET(value = "beststories.json")
     override fun getBestStories(): Flow<PagingData<Story>> {
        return getPagedStories { hackerNewsApi.getBestStories() }
     }
