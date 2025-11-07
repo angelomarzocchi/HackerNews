@@ -16,6 +16,9 @@ retrofitSerialization = "1.0.0"
 paging = "3.3.6"
 material3 = "1.4.0"
 
+mockk = "1.14.6"
+turbine = "1.2.1"
+
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
@@ -38,6 +41,14 @@ retrofit-kotlinx-serialization = { group = "com.jakewharton.retrofit", name = "r
 kotlinx-serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerializationJson" }
 androidx-paging-runtime-ktx = { group = "androidx.paging", name = "paging-runtime-ktx", version.ref = "paging" }
 androidx-paging-compose = { group = "androidx.paging", name = "paging-compose", version.ref = "paging" }
+
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "kotlinxSerializationJson" }
+androidx-paging-testing = { group = "androidx.paging", name = "paging-common", version.ref = "paging" }
+mockk-android = { group = "io.mockk", name = "mockk-android", version.ref = "mockk" }
+mockk-agent = { group = "io.mockk", name = "mockk-agent-jvm", version.ref = "mockk" }
+cash-turbine = { group = "app.cash.turbine", name = "turbine", version.ref = "turbine" }
+
+
 
 
 [plugins]
