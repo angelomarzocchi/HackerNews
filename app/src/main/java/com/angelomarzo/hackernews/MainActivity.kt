@@ -12,6 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.lifecycle.viewmodel.compose.viewModel
+import com.angelomarzo.hackernews.ui.HackerNewsApp
 import com.angelomarzo.hackernews.ui.HackerNewsScreen
 import com.angelomarzo.hackernews.ui.HackerNewsViewModel
 import com.angelomarzo.hackernews.ui.theme.HackerNewsTheme
@@ -23,11 +24,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             HackerNewsTheme {
-                Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    HackerNewsScreen(
-                        paddingValues = innerPadding
-                    )
-                }
+                HackerNewsApp(modifier = Modifier.fillMaxSize())
             }
         }
     }

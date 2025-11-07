@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_padding_zero">0dp</dimen>
+    <dimen name="dimen_padding_medium">16dp</dimen>
+    <dimen name="dimen_padding_small">8dp</dimen>
+    <dimen name="dimen_story_item_vertical_padding">6dp</dimen>
+    <dimen name="dimen_card_elevation">2dp</dimen>
+    <dimen name="dimen_spaced_by_small">4dp</dimen>
+    <dimen name="dimen_icon_size_small">16dp</dimen>
+    <dimen name="dimen_top_bar_icon_size">32dp</dimen>
+</resources>

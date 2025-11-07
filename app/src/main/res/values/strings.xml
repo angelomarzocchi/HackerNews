@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Hacker News</string>
+    <string name="story_no_title">No Title</string>
+    <string name="story_author_unknown">Unknown</string>
+    <string name="story_default_count">0</string>
+    <string name="error_prefix">Error: </string>
+    <string name="action_retry">Retry</string>
+    <string name="error_load_more_prefix">Couldn\'t load more items: </string>
 </resources>

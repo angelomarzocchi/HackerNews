@@ -258,7 +258,7 @@ val unspecified_scheme = ColorFamily(
 @Composable
 fun HackerNewsTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = true,
+    dynamicColor: Boolean = false,
     content: @Composable() () -> Unit
 ) {
     val colorScheme = when {
